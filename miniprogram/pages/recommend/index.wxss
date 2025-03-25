@@ -1,0 +1,17 @@
+.recommend-list {
+  padding: 10px;
+}
+
+.recommend-item {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.category,
+.shop-name,
+.recommend-reason,
+.recommend-item,
+.comment {
+  margin-bottom: 5px;
+}
