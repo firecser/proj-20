@@ -1,5 +1,6 @@
 .recommend-list {
   padding: 10px;
+  transition: transform 0.3s ease; /* 添加动画效果 */
 }
 
 .recommend-item {
@@ -14,4 +15,10 @@
 .recommend-item,
 .comment {
   margin-bottom: 5px;
+}
+
+.index {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666;
 }
