@@ -1,10 +1,11 @@
 <view class="recommend-list" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd" style="transform: translateY({{translateY}}px)">
-  <view class="recommend-item" wx:for="{{recommendList}}" wx:key="_id">
+  <view class="recommend-item" wx:for="{{recommendList}}" wx:key="_id" hover-class="recommend-item-active">
     <view class="index">#{{index + 1}}</view>
     <view class="category">品类: {{item.category}}</view>
     <view class="shop-name">店名: {{item.shopName}}</view>
+    <view class="recommend-item-title">推荐单品/备注：</view>
+    <view class="recommend-item-content">{{item.recommendItemOrNote}}</view>
     <view class="recommend-reason">推荐理由: {{item.recommendReason}}</view>
-    <view class="recommend-item">推荐单品/备注: {{item.recommendItemOrNote}}</view>
     <view class="comment">评论区: {{item.comment}}</view>
   </view>
 </view>
